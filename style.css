@@ -1,0 +1,264 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+background-color: #00000c;
+font-family: 'Roboto', sans-serif;
+
+}
+
+.wrapper{
+    max-width: 450px;
+    width: 100%;
+    margin: 7em auto;
+    padding: 20px;
+    box-shadow: 0 0 10px #2196f3,  0 0 10px #2196f3,  0 0 10px #2196f3,  0 0 10px #2196f3,  0 0 10px #2196f3; 
+    border: solid 2px rgba(68, 68, 68, 0.445);
+    border-radius: 10px;
+    background-clip: padding-box;
+    backdrop-filter: blur(10px);
+    text-align: center;
+
+}
+
+.form-glass{
+width: 100%;
+}
+
+.wrapper:hover{
+
+}
+
+.form_group{
+
+    margin-bottom: 20px;
+    align-items: center;
+    /* give it a display flex if with a label */
+}
+
+
+/* label{ 
+    width : ;
+    color: ;
+    margin: ;
+    */
+
+.form_group input {
+    padding: 10px 5px;
+    width: 90%;
+    outline: none;
+    border: none;
+    background:rgba(179, 179, 179,0.3);
+    color: ghostwhite;
+    height: 50px;
+    font-size: 15px;
+    caret-color: #2196f3;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .5) inset;
+    border-radius: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+input::placeholder{
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    overflow: hidden;
+    padding: 5px;
+    color: white;
+    font-size: 13px;
+    font-family: 'Roboto', sans-serif;
+}
+
+input:focus::placeholder{
+    visibility: hidden;
+    
+}
+
+input:focus{
+    transition-delay: 1s;
+    transition: 5s;
+    box-shadow: 0 0 10px #2196f3,  0 0 10px #2196f3,  0 0 10px #2196f3,  0 0 10px #2196f3,  0 0 10px #2196f3; 
+}
+
+
+.form-glass h1 {
+    animation: text-flicker 3s linear infinite;
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    letter-spacing: 10px;
+    filter: blur(.4px);
+    font-weight: 100px;
+    font-family: 'Roboto', sans-serif;
+    text-shadow: 0 0 10px #2196f3,0 0 20px #2196f3,0 0 40px #2196f3,0 0 80px #2196f3,0 0 160px #2196f3;
+}
+
+#offset{
+    animation:  letter-flicker 2s linear infinite;
+}
+
+@keyframes text-flicker {
+    0% {
+      opacity:0.1;
+
+    }
+    
+    2% {
+      opacity:1;
+
+    }
+    8% {
+
+    }
+    9% {
+      opacity:1;
+
+    }
+    12% {
+      opacity:0.1;
+
+    }
+    20% {
+      opacity:1;
+   }
+    25% {
+      opacity:0.3;
+
+    }
+    30% {
+      opacity:1;
+
+    }
+    
+    70% {
+      opacity:0.7;
+
+    }
+    
+    72% {
+      opacity:0.2;
+
+    }
+    
+    77% {
+      opacity:.9;
+
+    }
+    100% {
+      opacity:.9;
+
+    }
+  }
+
+  @keyframes letter-flicker {
+    0% {
+      opacity:0.1;
+
+    }
+    2% {
+      opacity:0.1;
+
+    }
+    4% {
+      opacity:1;
+
+    }
+    
+    
+    19% {
+
+    }
+    21% {
+      opacity:0.1;
+
+    }
+    23% {
+      opacity:1;
+
+    }
+    
+    80% {
+      opacity:1;
+
+    }
+    83% {
+      opacity:0.4;
+
+    }
+    87% {
+      opacity:1;
+
+    }
+  }
+
+.form-glass h1::before{
+
+    content: '';
+    z-index: 1;
+    mix-blend-mode: color;
+    color: #00adff;
+    animation: animate 5sec  linear infinite;
+}
+
+@keyframes animate {
+
+    0%{
+        filter: hue-rotate(0deg);
+    }
+
+    100%{
+        filter: hue-rotate(0deg)
+    }
+}
+
+.form_button{
+background-color: transparent;
+text-transform: uppercase;
+letter-spacing: 4px;
+filter: blur(.4px);
+text-shadow: 0 0 10px #2196f3,0 0 20px #2196f3,0 0 40px #2196f3,0 0 80px #2196f3,0 0 160px #2196f3;
+text-decoration: none;
+font-size: 15px;
+border: none;
+transition: 0.6s;
+color: white;
+padding: 1em 1em;
+border-radius: 10px;
+border: 0.1px solid rgba(179, 179, 179,0.3);
+margin: 1em auto 2em auto;
+width: 80%;
+height: 60px;
+}
+
+.form_button:hover{
+    box-shadow: 0 0 10px #2196f3,0 0 20px #2196f3,0 0 40px #2196f3;
+    cursor: pointer;
+}
+
+.form_button:focus{
+    border: none;
+    outline: none;
+}
+
+.forgot a {
+    text-decoration: none;
+    color: white;
+}
+
+.forgot label{
+    font-style: italic;
+    margin-left: -19%;
+    margin-top: -2px;
+}
+
+.forgot  {
+    display: flex;
+    color: white;
+    filter: blur(.4px);
+    text-shadow: 0 0 10px #2196f3,0 0 20px #2196f3,0 0 40px #2196f3,0 0 80px #2196f3,0 0 160px #2196f3;
+    justify-content: space-around;
+    margin-bottom: 1em;
+}
