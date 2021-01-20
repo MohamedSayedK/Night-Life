@@ -5,8 +5,13 @@
 }
 
 body {
-background-color: #00000c;
+    /*
+    background-image: url(hero.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+ */
 font-family: 'Roboto', sans-serif;
+background-color: #00000c;
 
 }
 
@@ -167,9 +172,8 @@ input:focus{
 
     }
     
-    
     19% {
-
+        opacity:1;
     }
     21% {
       opacity:0.1;
