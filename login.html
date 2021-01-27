@@ -5,28 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-    <title>Night Login</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <title>Serenity Login</title>
 </head>
 <body>
-    <div class="wrapper">
-        <form action="" method="post" class="form-glass">
-            <div class="header">
-                <h1>LO<span id="offset">G</span>IN</h1>
-            </div>
-            <div class="form_group">
-                <input type="email" name="" id="" placeholder="Email" required autocomplete="off"> 
-            </div>
-            <div class="form_group">
-                <input type="password" name="" id="" placeholder="Password"> 
-            </div>
-                <input class="form_button" type="button" value="Login">
-                <div class="forgot">
-                    <input type="checkbox" name="" id="check" > <label for="check">Remember me</label>
-                    <a href="http://">Forgot Password?</a>
+    <main class="login-main">
+        <div class="wrapper">
+            <form action="" method="post" class="form-glass">
+                <div class="header">
+                    <h1>LO<span id="offset">G</span>IN</h1>
                 </div>
-                <input class="form_button" type="button" value="Create Account">
-        </form>
-            </div>
+                <div class="form_group">
+                    <input type="email" name="" id="" placeholder="Email" required autocomplete="off"> 
+                </div>
+                <div class="form_group">
+                    <input type="password" name="" id="" placeholder="Password"> 
+                </div>
+                    <input class="form_button" type="button" value="Login" onclick="location.href='http://127.0.0.1:5500/main.html'">
+                    <div class="forgot">
+                        <input type="checkbox" name="" id="check" > <label for="check">Remember me</label>
+                        <a href="http://">Forgot Password?</a>
+                    </div>
+                    <input class="form_button" type="button" value="Create Account">
+            </form>
+                </div>
+    </main>
+
 </body>
 </html>
