@@ -1,0 +1,25 @@
+{
+  "name": "night-life",
+  "version": "1.0.0",
+  "description": "Work in progress",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MohamedSayedK/Night-Life.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MohamedSayedK/Night-Life/issues"
+  },
+  "homepage": "https://github.com/MohamedSayedK/Night-Life#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
